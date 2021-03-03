@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Landing Page Bike Town Repair Shop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+<style>
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+</head>
+<body>
+
+<!-- TOP NAVBAR W/ LOGO & BUTTONS -->
+
+<nav class="navbar navbar-expand-lg bg-light navbar-light">
+  <a class="navbar-brand" href="#"><img src="images/skeleton/bike-town.png" alt="logotipo Bike Town" style="height: 50px; width:auto;"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="color: rgb(2, 2, 39);">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+       <a class="nav-link mr-3" href="#" style="font-weight: 600;color: rgb(2, 2, 39);font-size:1.4em;"><i class="fa fa-fw fa-wrench"></i> Repair Shop</a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link mr-3" href="#" style="font-weight: 600;color: rgb(2, 2, 39);font-size:1.4em;"><i class="fa fa-fw fa-question-circle"></i> Services</a>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link mr-5" type="button" href="#" class="btn btn-outline-dark" style="padding-inline: 25px;font-weight: 600;color: rgb(2, 2, 39);font-size:1.4em; border-color:rgb(2, 2, 39);border-radius: 10%;"><i class="fas fa-calendar-check"></i> Book</button>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+
+
+<div class="container-fluid" style="margin-top:15px; background-image: linear-gradient(to right, rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url(images/skeleton/bg-squared.jpg);background-repeat:no-repeat; background-size:cover; background-position:center; border-top:20px solid rgb(211,211,211);">
+  <div class="row mx-4">
+
+<!-- MAIN CALL -->
+    <div class="col-sm-12 col-lg-8 mt-5">
+      <h2 style="font-weight: 600; font: size 1.2em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a lacus massa!</h2>
+      <h3 style="font-weight: 400;">Phasellus id dolor quis arcu malesuada fermentum.</h3>
+    </div>
+
+<!-- FILL-UP BOX -->
+    <div class="col-sm-12 col-lg-4 my-5">
+        <div class="container" style="width:450px;height:auto;">
+            <div class="shadow ml-3 px-5 py-4 bg-white text-center" style="border-radius: 10%;">
+                <h4 style="text-align: center;"><strong>Visit the Shop</strong>, or submit your service booking online</h4>
+
+                <!-- BOX FIELDS -->
+                <form action="/action_page.php">
+                    <div class="form-group pt-3">
+                        <input type="email" class="form-control" id="email" placeholder="Email" name="Email" style="color:gray;background: rgb(234, 234, 253);font-weight: 500;">
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col">
+                            <input type="text" class="form-control" id="name" placeholder="Name" name="name" style="color:gray;background: rgb(234, 234, 253);font-weight: 500;">
+                        </div>
+                        <div class="form-group col">
+                            <input type="password" class="form-control" id="tel" placeholder="Telephone" name="telefone" style="color:gray;background: rgb(234, 234, 253);font-weight: 500;">
+                        </div>
+                    </div>
+
+		    <div class="form-group">
+			<form action="/action_page.php">
+			 <input type="date" class="form-control" id="service" name="service" style="color:gray;background: rgb(234, 234, 253);font-weight: 500;">
+			</form>
+                    </div>
+
+                    <div class="row pb-3">
+                        <h4 style="margin: auto; font-weight: 500;">How do you prefer being contacted?</h4>
+                    </div>
+                    <!-- Radio buttons box -->
+                    <div class="container mx-auto">
+                        <div class="form-check text-left">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio">I'd like to receive every single news.
+                            </label>
+                          </div>
+                          <div class="form-check text-left">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio">Just want to receive new products' news.
+                            </label>
+                          </div>
+                          <div class="form-check text-left">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio">Receiving news once a month is fine.
+                            </label>
+                          </div>
+                          <div class="form-check text-left">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio">Just want to receive news on holidays' seasons.
+                            </label>
+                          </div>
+                    </div>
+
+                    <!-- SUBMIT BUTTON -->
+                    <button type="submit" class="btn btn-secondary" style="padding:10px; margin-top: 10px; font-size: 1.2rem; font-weight: 500; background-color: rgb(34, 34, 75);"><i class="fas fa-calendar-check"></i> Book</button>
+                </form>
+            </div>
+        </div>         
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT CARROUSEL-->
+<div id="demo" class="carousel slide" data-ride="carousel" style="border-top:20px solid rgb(211,211,211);">
+
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/skeleton/produto_old2.jpg" alt="Shop" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="images/skeleton/bg-squared2.jpg" alt="Shop" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="images/skeleton/bg-squared7.jpg" alt="Shop" width="1100" height="500">
+    </div>
+  </div>
+  
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<!-- SERVICE DESCRIPTION CARDS -->
+<div class="container-fluid" style="border-top:20px solid rgb(211,211,211);">
+ <p class="lead" style="margin-top: 40px; margin-bottom: 40px; font-size: 2.5em; font-weight: 500; text-align:center;"><strong>Aliquam vitae aliquam libero.</strong></p>
+ <div class="card-deck row justify-content-center">
+  <div class="card col-xs-12 col-md-3" style="border:none;text-align: center;">
+    <i class="fas fa-laptop-house fa-5x" style="color: light blue; margin-bottom: 10px;"></i>
+    <div class="card-body">
+      <h6 class="card-title">Nam rutrum suscipit tortor sit amet ultrices.</h6>
+      <p class="card-text">Sed malesuada velit a varius viverra.</p>
+    </div>
+  </div>
+  <div class="card col-xs-12 col-md-3" style="border:none;text-align: center;">
+    <i class="fas fa-shapes fa-5x" style="color: light blue; margin-bottom: 10px;"></i>
+    <div class="card-body">
+      <h6 class="card-title">Nunc sagittis faucibus tortor.</h6>
+      <p class="card-text">Praesent nisl augue, pellentesque sed urna non, blandit pharetra elit.</p>
+  </div>
+  </div>
+  <div class="card col-xs-12 col-md-3" style="border:none;text-align: center;">
+    <i class="fas fa-qrcode fa-5x" style="color: light blue; margin-bottom:10px;"></i>
+    <div class="card-body">
+      <h6 class="card-title">Aliquam vitae aliquam libero.</h6>
+      <p class="card-text">Donec condimentum risus sapien, imperdiet sollicitudin sem tincidunt eget.</p>
+  </div>
+  </div>      
+  <div class="card col-xs-12 col-md-3" style="border:none;text-align: center;">
+    <i class="fas fa-hand-rock fa-5x" style="color: light blue; margin-bottom: 10px;"></i>
+    <div class="card-body">
+      <h6 class="card-title">Nunc porta tempus accumsan.</h6>
+      <p class="card-text">Quisque ornare odio mi, eget facilisis libero blandit sit amet.</p>
+    </div>
+  </div>
+ </div>
+</div>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <p class="col-sm-12 lead" style="margin-bottom: 10px; text-align: center; font-size: 1.5em; font-weight: 500;"><strong>Cras suscipit fermentum orci!</strong></p>
+       <div class="text-center">
+       <button type="submit" class="btn btn-secondary mx-auto" style="font-size: 1.5rem; font-weight: 500; background-color: rgb(34, 34, 75); margin-top:10px; margin-bottom: 50px;"><i class="fas fa-calendar-check"></i> Book Service</button>
+	</div>
+  </div>
+</div>
+
+ <!-- PRICING & BOOKING CARDS-->
+<div class="container-fluid" style="background-color: navy;padding-bottom: 20px;border-top:20px solid rgb(211,211,211);">
+  <p class="lead" style="color:white; margin-top: 40px; margin-bottom: 40px; font-size: 2.5em; font-weight: 500; text-align:center;"><strong>What & How Much</strong></p>
+  <div class="card-deck row justify-content-center">
+   <div class="card col-xs-12 col-md-2 mr-4" style="border-radius:5%;text-align: left; margin-bottom: 30px; margin-top=10px;">
+     <div class="card-body mx-auto">
+       <h5 class="card-title text-uppercase text-center"><strong>varius</strong></h5>
+       <h2 class="card-text text-center"><strong>$CLXXIX+</strong></h2>
+       <h4 class="card-text"><i class="fas fa-plus-circle fa-1x" style="color: green;"></i> +LIXVVI+</h4>
+       <h4 class="card-text"><i class="fas fa-check-circle fa-1x" style="color: green;"></i> Vel ullamcorper</h4>
+       <h4 class="card-text"><i class="fas fa-check-circle fa-1x" style="color: green;"></i> Vestibulum</h4>
+       <div class="text-center">
+       <button type="submit" class="btn btn-secondary mx-auto" style="font-size: 1.5rem; font-weight: 500; background-color: rgb(34, 34, 75); margin-top:10px;"><i class="fas fa-calendar-check"></i> Book Service</button>
+	</div>
+     </div>
+   </div>
+   <div class="card col-xs-12 col-md-3 w-25" style="border-radius:5%;text-align: left; margin-bottom: 20px;">
+     <div class="card-body mx-auto">
+       <h5 class="card-title text-uppercase text-center"><strong>porttitor</strong></h5>
+       <h2 class="card-text text-center"><strong>$LXIVV+</strong></h2>
+       <h4 class="card-text"><i class="fas fa-plus-circle fa-1x" style="color: green;"></i> +CCMI+</h4>
+       <h4 class="card-text"><i class="fas fa-check-circle fa-1x" style="color: green;"></i> Vestibulum tortor</h4>
+       <h4 class="card-text"><i class="fas fa-check-circle fa-1x" style="color: green;"></i> Vel ullamcorper purus</h4>
+       <div class="text-center">
+       <button type="submit" class="btn btn-secondary" style="font-size: 1.5rem; font-weight: 500; background-color: rgb(34, 34, 75); margin-top:10px;"><i class="fas fa-calendar-check"></i> Book Service</button>
+	</div>
+   </div>
+   </div>
+   <div class="card col-xs-12 col-md-2 ml-4 w-25" style="border-radius:5%;text-align: left; margin-bottom: 30px; margin-top=10px;">
+     <div class="card-body mx-auto">
+       <h5 class="card-title text-uppercase text-center"><strong>pulvinar</strong></h5>
+       <h2 class="card-text text-center"><strong>+LVCMI+</strong></h2>
+       <h4 class="card-text"><i class="fas fa-check-circle fa-1x" style="color: green;"></i> +COPMMI+</h4>
+       <h4 class="card-text"><i class="fas fa-check-circle fa-1x" style="color: green;"></i> Cursus id tortor</h4>
+       <h4 class="card-text"><i class="fas fa-check-circle fa-1x" style="color: green;"></i> Cras suscipit</h4>
+       <div class="text-center">
+	<button type="submit" class="btn btn-secondary" style="font-size: 1.5rem; font-weight: 500; background-color: rgb(34, 34, 75); margin-top:10px;"><i class="fas fa-calendar-check"></i> Book Service</button>
+	</div>
+   </div>
+   </div>      
+  </div>
+ </div>
+
+ <!-- HELP SECTION -->
+ <div class="container-fluid" style="background-color: rgb(227, 231, 231);padding-bottom: 40px; border-top:20px solid rgb(211,211,211);">
+  <p style="margin-top: 60px; margin-bottom:-2px; font-size: 1.5em; font-weight: 300; text-align:left;">HELP</p>
+  <h2 style="margin-bottom: 10px;"><strong>Proin sed odio ut mauris?</strong></h2>
+  <div class="col-sm-8 dropdown dropright ml-n4 my-2">
+    <button type="button" class="col-sm-6 btn btn-primary dropdown-toggle text-left text-wrap"  data-toggle="dropdown">
+      Nunc interdum ligula lectus?
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item-text" style="color:black;text-decoration:none;">Vel ullamcorper purus luctus et. Fusce non pulvinar sapien. In tincidunt mollis ultricies. Phasellus id pellentesque odio, id cursus risus. Nam rutrum suscipit tortor sit amet ultrices. Curabitur rhoncus, nisi nec elementum molestie, eros magna pharetra erat, varius laoreet justo velit sit amet leo. Sed malesuada velit a varius viverra. Nullam rutrum, tortor vel imperdiet placerat, nulla risus porttitor quam, quis fermentum lorem mauris et orci. Nunc sagittis faucibus tortor. Integer suscipit aliquet leo, eu hendrerit justo bibendum eu. Praesent nisl augue, pellentesque sed urna non, blandit pharetra elit. Etiam eu mauris ac neque varius blandit eget non tortor. Ut vulputate fermentum libero, eget imperdiet sapien lobortis vitae. Quisque ante dolor, malesuada eu dui eget, cursus tempus ligula.</a>
+    </div>
+  </div>
+  <div class="col-sm-8 dropdown dropright ml-n4 my-2">
+    <button type="button" class="col-sm-6 btn btn-primary dropdown-toggle text-left text-wrap" data-toggle="dropdown">
+      Donec et efficitur enim, et maximus lorem?
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item-text" style="color:black;text-decoration:none;">Suspendisse potenti. Maecenas ornare, arcu a tempus interdum, justo nulla molestie leo, a dapibus dolor lorem ut elit. Aliquam lectus ex, aliquet et laoreet et, lacinia quis mi. Vestibulum tortor magna, bibendum sit amet tincidunt id, faucibus eu eros.</a>
+    </div>
+  </div>
+  <div class="col-sm-8 dropdown dropright ml-n4 my-2">
+    <button type="button" class="col-sm-6 btn btn-primary dropdown-toggle text-left text-wrap" data-toggle="dropdown">
+      Suspendisse sagittis finibus felis, ac pulvinar mauris eleifend eu?
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item-text" style="color:black;text-decoration:none;">Nunc nulla metus, pharetra congue augue quis, congue vulputate urna. Vestibulum ut nibh et ante rutrum congue. Nam erat lorem, tincidunt sit amet orci id, euismod facilisis magna.</a>
+    </div>
+  </div>
+  <div class="col-sm-8 dropdown dropright ml-n4 my-2">
+    <button type="button" class="col-sm-6 btn btn-primary dropdown-toggle text-left text-wrap" data-toggle="dropdown">
+      Maecenas eget auctor leo, quis fringilla tortor?
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item-text" style="color:black;text-decoration:none;">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam cursus augue sodales consequat viverra. Cras magna metus, sodales in congue quis, pellentesque a nisi. Nullam id augue vitae justo laoreet venenatis auctor quis nunc. Nunc scelerisque, metus nec cursus lacinia, dui justo efficitur nisl, vitae dignissim quam leo ut justo.</a>
+    </div>
+  </div>
+  <div class="col-sm-8 dropdown dropright ml-n4 my-2">
+    <button type="button" class="col-sm-6 btn btn-primary dropdown-toggle text-left text-wrap" data-toggle="dropdown">
+      Donec diam urna, facilisis nec nunc vitae, gravida mollis ipsum?
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item-text" style="color:black;text-decoration:none;">Ut est ipsum, accumsan quis massa a, blandit elementum erat. Cras tincidunt porta nunc at dignissim. Cras tempus luctus tellus, eget pharetra urna efficitur sit amet. Nam euismod placerat pellentesque. Ut sed condimentum massa.</a>
+    </div>
+  </div>
+  <div class="col-sm-8 dropdown dropright ml-n4 my-2">
+    <button type="button" class="col-sm-6 btn btn-primary dropdown-toggle text-left text-wrap" data-toggle="dropdown">
+      Sed malesuada velit a varius viverra?
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item-text" style="color:black;text-decoration:none;">Nullam rutrum, tortor vel imperdiet placerat, nulla risus porttitor quam, quis fermentum lorem mauris et orci. Nunc sagittis faucibus tortor. Integer suscipit aliquet leo, eu hendrerit justo bibendum eu. Praesent nisl augue, pellentesque sed urna non, blandit pharetra elit.</a>
+    </div>
+  </div>
+  <div class="col-sm-8 dropdown dropright ml-n4 my-2">
+    <button type="button" class="col-sm-6 btn btn-primary dropdown-toggle text-left text-wrap" data-toggle="dropdown">
+      Quisque bibendum vulputate consectetur. Quisque mollis rutrum erat in commodo?
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item-text" style="color:black;text-decoration:none;">Pellentesque nec ipsum ultrices, sodales turpis et, pretium eros. Duis interdum suscipit orci, eu facilisis turpis. Morbi eu blandit ante, sed sodales sapien.</a>
+    </div>
+  </div>
+  <div class="col-sm-8 dropdown dropright ml-n4 my-2">
+    <button type="button" class="col-sm-6 btn btn-primary dropdown-toggle text-left text-wrap" data-toggle="dropdown">
+      Cras magna metus, sodales in congue quis, pellentesque a nisi?
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item-text" style="color:black;text-decoration:none;">Nullam id augue vitae justo laoreet venenatis auctor quis nunc. Nunc scelerisque, metus nec cursus lacinia, dui justo efficitur nisl, vitae dignissim quam leo ut justo. Donec diam urna, facilisis nec nunc vitae, gravida mollis ipsum. Ut est ipsum, accumsan quis massa a, blandit elementum erat. Cras tincidunt porta nunc at dignissim. Cras tempus luctus tellus, eget pharetra urna efficitur sit amet. Nam euismod placerat pellentesque. Ut sed condimentum massa.</a>
+    </div>
+  </div>
+  <div class="col-sm-8 dropdown dropright ml-n4 my-2">
+    <button type="button" class="col-sm-6 btn btn-primary dropdown-toggle text-left text-wrap" data-toggle="dropdown">
+      Sed malesuada velit a varius viverra. Nullam rutrum, tortor vel imperdiet placerat?
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item-text" style="color:black;text-decoration:none;">Nulla risus porttitor quam, quis fermentum lorem mauris et orci. Nunc sagittis faucibus tortor. Integer suscipit aliquet leo, eu hendrerit justo bibendum eu. Praesent nisl augue, pellentesque sed urna non, blandit pharetra elit. Etiam eu mauris ac neque varius blandit eget non tortor. Ut vulputate fermentum libero, eget imperdiet sapien lobortis vitae. Quisque ante dolor, malesuada eu dui eget, cursus tempus ligula.</a>
+    </div>
+  </div>
+ </div>
+
+
+</body>
+</html>
